@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons>
+      <button class='close' ion-button (click)="dismiss()">
+        <ion-icon name='close' item-start></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Playing</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <h2>{{getValue()}}</h2>
+  <iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(getValue())' frameborder="0" webkitallowfullscreen
+    style="position:absolute;top:0;left:0;width:100%;height:100%;" mozallowfullscreen allowfullscreen></iframe>
+</ion-content>
