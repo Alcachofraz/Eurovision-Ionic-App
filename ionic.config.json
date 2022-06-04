@@ -1,7 +1,10 @@
 {
   "name": "Eurovision-Ionic-App",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
   },
   "type": "angular"
 }
